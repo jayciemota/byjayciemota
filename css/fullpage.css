@@ -137,7 +137,7 @@ html.fp-enabled,
     display: block;
     width: 18px;
     height: 18px;
-    margin: 7px;
+    margin: 12px;
     position:relative;
 }
 .fp-slidesNav ul li {
@@ -191,8 +191,15 @@ html.fp-enabled,
     position: absolute;
     top: 5px;
     color: #000;
+    background: #fff;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    box-shadow:10px 2px #705cf2;
     font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
+    font-family: aglet-mono, mono;
+    font-weight: 400;
+    font-style: normal;
     white-space: nowrap;
     max-width: 220px;
     overflow: hidden;
