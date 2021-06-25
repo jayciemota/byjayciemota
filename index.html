@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fullpage.css">
 </head>
 <body>
-    <header></header>
+    <header>
+    </header>
     <main>
 <div id="fullpage">
-	<div class="section">Some section</div>
-    <div class="slide"> Slide 1 </div>
-	<div class="slide"> Slide 2 </div>
-	<div class="slide"> Slide 3 </div>
-	<div class="slide"> Slide 4 </div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
+	<div class="section" data-anchor="home">
+			<img src="img/byjaycie-black.svg" width="600">
+			<img src="img/byjaycie-pink.svg" width="600">
+    </div>
+	<div class="section" data-anchor="projects">Some section</div>
+	<div class="section" data-anchor="about">Some section</div>
+	<div class="section" data-anchor="contact">Some section</div>
 </div>
-
+<div class="grid-bg"></div>
 
 
 
@@ -22,5 +24,18 @@
 
 
 </main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/simpleParallax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.10/barba.min.js"></script>
+<script src="js/fullpage.min.js"></script>
+<script>
+    new fullpage('#fullpage', {
+        //options here
+        autoScrolling:true,
+        navigation: true
+    });
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </body>
 </html>
