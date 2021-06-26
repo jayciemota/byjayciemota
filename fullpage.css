@@ -137,7 +137,7 @@ html.fp-enabled,
     display: block;
     width: 18px;
     height: 18px;
-    margin: 12px;
+    margin: 16px;
     position:relative;
 }
 .fp-slidesNav ul li {
@@ -150,7 +150,7 @@ html.fp-enabled,
     z-index: 1;
     width: 100%;
     height: 100%;
-    cursor: pointer;
+    cursor: url("https://i.imgur.com/VnCVQaI.png"), auto;
     text-decoration: none;
 }
 #fp-nav ul li a.active span,
@@ -170,7 +170,7 @@ html.fp-enabled,
     z-index: 1;
     height: 8px;
     width: 8px;
-    border: 2px solid #705cf2;
+    border: 2px solid #000;
     background:none;
     left: 50%;
     top: 50%;
@@ -193,7 +193,7 @@ html.fp-enabled,
     color: #000;
     background: #fff;
     padding: 5px 10px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-radius: 15px;
     box-shadow:10px 2px #705cf2;
     font-size: 14px;
@@ -206,7 +206,7 @@ html.fp-enabled,
     display: block;
     opacity: 0;
     width: 0;
-    cursor: pointer;
+    cursor: url("https://i.imgur.com/VnCVQaI.png"), auto;
 }
 #fp-nav ul li:hover .fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
