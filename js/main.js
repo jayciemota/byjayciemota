@@ -1,4 +1,10 @@
 
+function newFact() {
+    var facts = ["The wood frog can hold its pee for up to eight months. My personal record is ten hours on an international flight. Wow!", "The term 'freelancers' originally referred to self-employed, sword-wielding mercenaries. Regrettably, I do not own a sword.", "The word 'MacGyvered' is in the Oxford English Dictionary. (e.g. I MacGyvered this website using toothpicks and StackOverflow.)"];
+    var randomFact = Math.floor(Math.random() * facts.length);
+    document.getElementById('factDisplay').innerHTML = facts[randomFact];
+  };
+
 
 /* Colorful click effect */
 const COLORS = ['red','green','pink','blue','yellow','purple'];
@@ -43,3 +49,38 @@ document.addEventListener('click', function () {
     navMenu.classList.remove('bounce-in-top')
 }
 })
+
+
+/* Contact Form Validation */
+
+$('document').ready(function(){
+	$('input[type="text"], input[type="email"], textarea').focus(function(){
+		var background = $(this).attr('id');
+		$('#' + background + '-form').addClass('formgroup-active');
+		$('#' + background + '-form').removeClass('formgroup-error');
+	});
+	$('input[type="text"], input[type="email"], textarea').blur(function(){
+		var background = $(this).attr('id');
+		$('#' + background + '-form').removeClass('formgroup-active');
+	});
+
+function errorfield(field){
+	$(field).addClass('formgroup-error');
+	console.log(field);	
+}
+
+$("#contact-form").submit(function() {
+	var stopsubmit = false;
+
+if($('#name').val() == "") {
+	errorfield('#name-form');
+	stopsubmit=true;
+}
+if($('#email').val() == "") {
+	errorfield('#email-form');
+	stopsubmit=true;
+}
+  if(stopsubmit) return false;
+});
+		
+});
