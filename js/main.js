@@ -1,4 +1,44 @@
 
+// create variables.
+let localDarkMode = localStorage.getItem('localDarkMode'); 
+let darkModeToggle = document.querySelector('a.dark-mode-toggle');
+
+//Set how will the dark and light mode interact with your HTML and CSS creating functions for when it's enabled and disabled.
+let enableDarkMode = () => {
+  document.body.classList.add('dark');
+  localStorage.setItem('localDarkMode', 'enabled');
+}
+
+let disableDarkMode = () => {
+  document.body.classList.remove('dark');
+  localStorage.setItem('localDarkMode', null);
+}
+
+//Once the page loads, check the localStorage value for the last session (if any) to set the correct mode.
+
+if (localDarkMode === 'enabled') { enableDarkMode() }
+
+//Add the event listener for the toggle button adding the functions already created before and loading the value for the localStorage too.
+
+darkModeToggle.addEventListener('click', () => {
+  
+  localDarkMode = localStorage.getItem('localDarkMode'); 
+  
+  if (localDarkMode !== 'enabled') {
+    enableDarkMode();
+
+  } else {  
+    disableDarkMode(); 
+  }
+});
+
+
+
+
+
+
+
+// Generates new fact on About page
 function newFact() {
     var facts = ["The wood frog can hold its pee for up to eight months. My personal record is ten hours on an international flight. Wow!", "The term 'freelancers' originally referred to self-employed, sword-wielding mercenaries. Regrettably, I do not own a sword.", "The word 'MacGyvered' is in the Oxford English Dictionary. (e.g. I MacGyvered this website using toothpicks and StackOverflow.)"];
     var randomFact = Math.floor(Math.random() * facts.length);
@@ -6,7 +46,7 @@ function newFact() {
   };
 
 
-/* Colorful click effect */
+// Colorful click effect
 const COLORS = ['red','green','pink','blue','yellow','purple'];
 
 function clickEffect(e){
@@ -25,7 +65,7 @@ function clickEffect(e){
 }
 document.addEventListener('click', clickEffect)
 
-/* Navigation Menu Toggle */
+// Navigation Menu Toggle 
 const menuToggle = document.querySelector('a.menu-toggle')
 const navMenu = document.querySelector('.overlay')
 
@@ -50,9 +90,7 @@ document.addEventListener('click', function () {
 }
 })
 
-
-/* Contact Form Validation */
-
+// Contact Form Validation 
 $('document').ready(function(){
 	$('input[type="text"], input[type="email"], textarea').focus(function(){
 		var background = $(this).attr('id');

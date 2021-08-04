@@ -177,7 +177,7 @@ html.fp-enabled,
     width: 16px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
-    background:#f24bd6;
+    background:var(--nav-link);
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -186,7 +186,7 @@ html.fp-enabled,
     z-index: 1;
     height: 8px;
     width: 8px;
-    border: 3px solid #000000;
+    border: 3px solid var(--black);
     background:none;
     left: 50%;
     top: 50%;
@@ -201,17 +201,17 @@ html.fp-enabled,
     width: 16px;
     height: 16px;
     margin: -5px 0px 0px -5px;
-    background:#705cf2;
+    background:var(--social-hover);
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     top: 0;
-    color: #000;
-    background: #fff;
+    color: var(--black);
+    background: var(--white);
     padding: 5px 10px;
-    border: 2px solid #000;
+    border: 2px solid var(--black);
     border-radius: 15px;
-    box-shadow:10px 2px #705cf2;
+    box-shadow:10px 2px var(--purple-none);
     font-size: 16px;
     font-family: aglet-mono, mono;
     font-weight: 400;
