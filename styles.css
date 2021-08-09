@@ -1111,6 +1111,15 @@ background: none;
   flex-direction: column;
 }
 
+.video-shell-body{
+  border-radius: 0 0 8px 8px;
+  border-bottom: 3px solid var(--black);
+  border-right: 3px solid var(--black);
+  border-left: 3px solid var(--black);
+  display: flex;
+  flex-direction: column;
+}
+
 .shell-bg {
   background: var(--white);
 }
@@ -1120,6 +1129,7 @@ background: none;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 .header-dot{
     border-radius: 50%;
@@ -1139,6 +1149,12 @@ background: none;
 .reg{
   width: 850px;
   height: 610px;
+  max-width: 100%;
+}
+
+.vid{
+  width: 1020px;
+  height: auto;
   max-width: 100%;
 }
 

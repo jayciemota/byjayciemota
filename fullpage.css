@@ -74,12 +74,13 @@ html.fp-enabled,
     left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent var(--black) transparent transparent;
+    display: none;
 }
 .fp-controlArrow.fp-next {
     right: 15px;
     border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    border-color: transparent transparent transparent var(--black);
 }
 .fp-scrollable {
     overflow: hidden;
@@ -116,8 +117,6 @@ html.fp-enabled,
         left: -12px;
     }
 }
-
-
 .fp-slidesNav{
     position: absolute;
     z-index: 4;
@@ -139,9 +138,9 @@ html.fp-enabled,
     top: 17px;
 }
 .fp-slidesNav ul{
-    border: 3px solid #000;
+    border: 3px solid var(--black);
     border-radius: 30px;
-    background: #fff;
+    background: var(--white);
 } 
 #fp-nav ul,
 .fp-slidesNav ul {

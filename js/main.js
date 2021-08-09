@@ -30,15 +30,20 @@ darkModeToggle.addEventListener('click', () => {
   } else {  
     disableDarkMode(); 
   }
-});
+})
+
+// Autoplay videos on Projects page
+
+const allVideos = document.querySelectorAll('video')
+
+const playVideo = () => {
+  allVideos.forEach((video) => {
+    video.play()
+  })
+}
 
 
-
-
-
-
-
-// Generates new fact on About page
+// Generate random fact on About page on page reload
 function newFact() {
     var facts = ["The wood frog can hold its pee for up to eight months. My personal record is ten hours on an international flight. Wow!", "The term 'freelancers' originally referred to self-employed, sword-wielding mercenaries. Regrettably, I do not own a sword.", "The word 'MacGyvered' is in the Oxford English Dictionary. (e.g. I MacGyvered this website using toothpicks and StackOverflow.)"];
     var randomFact = Math.floor(Math.random() * facts.length);
