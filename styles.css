@@ -1352,7 +1352,6 @@ font-size: 1.3em;
 .about-content{
   border: 2px solid var(--black);
   padding: 15px;
-  height: -webkit-fill-available;
 }
 .about-content ul{
   list-style-type: none;
