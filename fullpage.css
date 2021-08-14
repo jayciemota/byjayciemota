@@ -137,11 +137,6 @@ html.fp-enabled,
 .fp-slidesNav.fp-top {
     top: 17px;
 }
-.fp-slidesNav ul{
-    border: 3px solid var(--black);
-    border-radius: 30px;
-    background: var(--white);
-} 
 #fp-nav ul,
 .fp-slidesNav ul {
   margin: 0;

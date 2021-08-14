@@ -87,6 +87,10 @@
   background: var(--blue-none);
 }
 
+.white-bg{
+  background: var(--white);
+}
+
 /*-- Color Classes --*/
 .green-color{
   color: var(--green);
@@ -105,7 +109,7 @@
 }
 
 /*FONT STYLES*/
-p, span, input, textarea, label {
+p, ul, span, input, textarea, label {
 	font-family: aglet-mono, mono, monospace;
     font-weight: 400;
     font-style: normal;
@@ -134,17 +138,32 @@ h5
 }
 
 h1 {
-  font-size: 5.5em;
+  font-size: 5em;
 }
 
 h2 {
-  font-size: 4.8em;
+  font-size: 4em;
 }
-@media only screen and (max-width: 975px){
+@media only screen and (min-width: 725px) and (max-width: 975px){
   h1 {
-    font-size: 4em;
+    font-size: 3.7em;
+  }
+  h2 {
+    font-size: 2.8em;
   }
 }
+
+@media only screen  and (max-width: 724px){
+  h1 {
+    font-size: 3.3em;
+  }
+  h2 {
+    font-size: 2.4em;
+  }
+}
+
+
+
 
 body {
     background:var(--main-bg);
@@ -283,44 +302,32 @@ body {
     .long_triangle{
       display: block;
       margin: -14% 0 0 34%;
-      text-align: center;
-      width: 200px;
     }
 
     .long_triangle_shadow{
         display: block;
         margin: -14% 0 0 33%;
-        text-align: center;
-        width: 200px;
     }
 
     .triangle{
       display: block;
       margin: -15% 0 0 84%;
-      text-align: center;
-      width: 200px;
     }
 
     .triangle_shadow{
         display: block;
         margin: -15% 0 0 85%;
-        text-align: center;
-        width: 200px;
     }
 
 
     .circle{
       display: block;
-      margin: -40% 0 0 9%;
-      text-align: center;
-      width: 200px;
+      margin: -50% 0 0 8%;
     }
 
     .circle_shadow{
         display: block;
-        margin: -40% 0 0 8%;
-        text-align: center;
-        width: 200px;
+        margin: -50% 0 0 7%;
     }
 
 /*--------NAVIGATION BAR--------- */
@@ -503,7 +510,8 @@ a:hover #Path_236 {
 
 /*---- Moon Toggle ----*/
 .dark-mode-toggle svg{
-  width: 50px;
+    width: 4vw;
+    min-width: 40px;
 }
 
 .moon-icon{
@@ -516,6 +524,7 @@ a:hover #Path_236 {
   cursor: pointer;
 }
 /*---Menu Toggle-----*/
+
 .menu-toggle svg {
   transition: 0.3s;
 }
@@ -544,7 +553,8 @@ a.menu-toggle {
 }
 
 a.menu-toggle svg {
-  width: 65px;
+  width: 3vw;
+  min-width: 50px;
   transition: all 0.5s ease;
 }
 
@@ -558,6 +568,11 @@ a.menu-toggle.clicked svg {
 /*---Mail Icon-----*/
 a:hover .mail-icon{
 fill:var(--highlight);
+}
+
+.mail svg{
+  width: 4vw;
+  min-width: 50px;
 }
 
 a .mail-icon{
@@ -581,13 +596,44 @@ a .mail-icon{
 
 .mail .icon-tooltip{
   top:33%;
-  right: 6%;
+  right: 6.2%;
 }
 
 .moon .icon-tooltip{
   top:35%;
-  right: 52%;
+  right: 53%;
 }
+
+@media only screen and (min-width: 1506px) and (max-width:1704px){
+  .mail .icon-tooltip{
+    right: 7.5%;
+  }
+}
+@media only screen and (min-width: 1307px) and (max-width:1505px){
+  .mail .icon-tooltip{
+    right: 8.5%;
+  }
+}
+@media only screen and (min-width: 975px) and (max-width:1306px){
+  .mail .icon-tooltip{
+    right: 10%;
+  }
+  .moon .icon-tooltip{
+    right: 53%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width:974px){
+  .mail .icon-tooltip{
+    right: 6%;
+    top:65%;
+  }
+  .moon .icon-tooltip{
+    right: 43%;
+    top:70%;
+  }
+}
+
+
 
 .moon a:hover ~ *, 
 .mail a:hover ~ * {
@@ -605,17 +651,8 @@ a .mail-icon{
   justify-content: center;
 }
 
-
-@media only screen and (min-width: 725px) and (max-width: 1588px){
-  .top-padding{
-    padding-top: 5%;
-  }
-}
-
-@media only screen and (min-width: 488px) and (max-width: 724px){
-  .top-padding{
-    padding-top: 22%;
-  }
+.justify-evenly{
+  justify-content: space-evenly;
 }
 
 section{
@@ -623,16 +660,15 @@ section{
   flex-direction: row;
   height: 100vh;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  padding: 60px;
 }
 
 .wrapper{
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  height: fit-content;
-  width: 100%;
+  width: 100vw;
   align-items: center;
 }
 
@@ -649,7 +685,16 @@ flex-wrap: wrap-reverse;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.threeCol{
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin: 70px;
+  grid-gap: 70px;
 }
 
 /* BYJAYCIEMOTA LOGO */
@@ -864,7 +909,6 @@ margin-left: 275px;
       margin-right: 0;
     }
 }
-
 @media only screen and (max-width: 650px) {    
     .accent{
       margin-top: -15px;
@@ -930,6 +974,8 @@ background: none;
 .rotate {
   animation: rotation 14s infinite linear;
 }
+
+
 
 .fresh-container{
   width: 22vw;
@@ -1081,11 +1127,11 @@ background: none;
 }
 
 .shadow{
-  box-shadow: 20px 60px var(--blk-shadow);
+  box-shadow: 15px 20px var(--blk-shadow);
 }
 
 .rev-shadow{
-  box-shadow: -20px 60px var(--blk-shadow);
+  box-shadow: -15px 20px var(--blk-shadow);
 }
 
 .shell-header{
@@ -1106,9 +1152,12 @@ background: none;
   border-left: 3px solid var(--black);
   height: 100%;
   min-height: 300px;
-  padding: 0 10px;
   display: flex;
   flex-direction: column;
+}
+
+.shell-padding{
+  padding: 40px;
 }
 
 .video-shell-body{
@@ -1128,8 +1177,8 @@ background: none;
   background: url('https://i.imgur.com/HvF7yfO.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  height: 40vh;
 }
-
 
 .header-dot{
     border-radius: 50%;
@@ -1142,27 +1191,24 @@ background: none;
 
 .xl{
   width: 1020px;
-  height: 750px;
+  height: auto;
   max-width: 100%;
 }
 
 .reg{
   width: 850px;
-  height: 610px;
+  height: 100%;
   max-width: 100%;
 }
 
 .vid{
-  width: 1020px;
+  width: 850px;
   height: auto;
   max-width: 100%;
 }
 
-
 @media screen and (max-width: 1494px){
-  .shadow{
-    box-shadow:none;
-  }
+  .shadow,
   .rev-shadow{
     box-shadow: none;
   }
@@ -1172,14 +1218,24 @@ background: none;
   .shell{
     padding: 0 40px;
   }
+  .about-bg,
   .reg{
-height: auto;
-  }
-  .xl{
   height: auto;
   }
+  .shell-padding{
+    padding: 0;
+  }  
 }
-
+@media screen and (min-width: 725px) and (max-width: 975px) {
+  .vid{
+    width: 650px;
+  }  
+}
+@media only screen and (max-width: 724px) {
+  .vid{
+    width: 440px;
+  }
+}
 form{
   margin: 0 auto;
   position: relative;
@@ -1272,17 +1328,13 @@ label{
 }
 
 /*======================ABOUT PAGE========================*/
-
 .subtitle{
-  font-size: 1.4em;
-  margin-top:0;
+  font-size: 1.3em;
 }
-
 .profile-name{
-  border-bottom: 2px solid #000 ;
+  border-bottom: 2px solid var(--black) ;
   margin: 5% 5% 0 5%;
 }
-
 .profile-name p{
   font-size: 2.2em;
   font-weight: 600;
@@ -1290,7 +1342,6 @@ label{
   margin: 20px 0;
   text-transform: uppercase;
 }
-
 .inner-shell{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1298,30 +1349,26 @@ label{
   grid-gap: 35px;
   margin: 4% 3%;
 }
-
 .slogan{
 font-weight: 600;
 font-style: italic;
 font-size: 1.3em;
 }
-
 .about-profile{
   display: flex;
   flex-direction: column;
   margin-left: 5%;
   justify-content: flex-start;
 }
-
 .about-content{
   border: 2px solid var(--black);
   padding: 15px;
+  height: -webkit-fill-available;
 }
-
 .about-content ul{
   list-style-type: none;
   padding-left: 0;
   }
-  
 .about-content ul li{
     line-height: 1.8em;
   }
@@ -1330,14 +1377,12 @@ font-size: 1.3em;
     font-size: 0.8em;
     line-height: 1.5em;
   }
-
 .about-img{
   border: 3px solid var(--black);
   border-radius: 5px 5px 5px 5px;
   max-width: 100%;
   object-fit: contain;
 }
-
 @media only screen and (max-width: 725px){
   .inner-shell{
     grid-template-columns: auto;
@@ -1347,7 +1392,7 @@ font-size: 1.3em;
     margin-left: 0;
   }
   .subtitle{
-    font-size: 108%;
+    font-size: 103%;
   }
   .slogan{
     font-size: 1em;
@@ -1355,11 +1400,87 @@ font-size: 1.3em;
   .bio li{
     font-size: 0.8em;
   }
-
   .profile-name p{
     font-size: 1.7em;
   }
 }
 
+/*======================PROJECTS PAGE========================*/
 
+.summary{
+  border: 2px solid var(--black);
+  width: 30vw;
+  min-width: 160px;
+  padding: 15px;
+  background: var(--white) ;
+  border-radius: 10px;
+}
 
+.summary-text{
+  font-size: 0.9em;
+  line-height: 1.3em;
+}  
+
+@media screen and (min-width: 725px) and (max-width: 975px) {
+  .summary-text{
+    font-size: 0.7em;
+  }  
+}
+
+@media only screen and (max-width: 724px) {
+  .summary-text{
+    font-size: 0.65em;
+  }  
+}
+
+/*----Palette----*/
+
+.palette{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 2px solid var(--black);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.palette-circle{
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--black);
+  border-radius: 50px;
+}
+
+/*------- Yume Forest Color Palette -------*/
+
+.dark-pink{
+  background: #e89797;
+}
+.brown{
+  background: #7d5a5a;
+}
+.olive-green{
+  background: #b0bb9d;
+}
+
+/*------- JY Goldmeter Color Palette -------*/
+
+.orange{
+  background: #FAAD1E;
+}
+.red{
+  background: #9E2116;
+}
+.jy-gray{
+  background: #242A2B;
+}
+/*------- Rinos-IP Color Palette -------*/
+.dark-yellow{
+  background: #ad8c02;
+}
+.dark-blue{
+  background: #0e9aad;
+}
+.rinos-gray{
+  background: #282828;
+}
