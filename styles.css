@@ -138,11 +138,11 @@ h5
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 102px;
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 78pxem;
 }
 @media only screen and (min-width: 725px) and (max-width: 975px){
   h1 {
@@ -509,11 +509,6 @@ a:hover #Path_236 {
 /* ============= HEADER ICONS===============*/
 
 /*---- Moon Toggle ----*/
-.dark-mode-toggle svg{
-    width: 4vw;
-    min-width: 40px;
-}
-
 .moon-icon{
   transition: 0.2s all ease-out;
 }
@@ -553,8 +548,8 @@ a.menu-toggle {
 }
 
 a.menu-toggle svg {
-  width: 3vw;
-  min-width: 50px;
+  width: 4.5vw;
+  min-width: 120px;
   transition: all 0.5s ease;
 }
 
@@ -570,10 +565,6 @@ a:hover .mail-icon{
 fill:var(--highlight);
 }
 
-.mail svg{
-  width: 4vw;
-  min-width: 50px;
-}
 
 a .mail-icon{
   transition: 0.2s ease-in;
@@ -719,7 +710,7 @@ flex-wrap: wrap-reverse;
 }
 
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 990px) {
   #mobile-logo{
     display: block;
   }
@@ -776,10 +767,10 @@ flex-wrap: wrap-reverse;
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 990px) {
   .tagline{
-    top: 69%;
-    font-size: 1.2em;
+    top: 64%;
+    font-size: 2em;
   }
 }
 
@@ -802,7 +793,7 @@ flex-wrap: wrap-reverse;
   overflow: hidden;
   position: fixed;
   z-index: 990;
-  top: 20%;
+  top: 18%;
   opacity:0;
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;;
   animation-delay: 2s;
@@ -937,7 +928,7 @@ background: none;
 .page-link{
   text-decoration: none;
   color: var(--black);
-  font-size: 1.7em;
+  font-size: 2em;
   transition: background-position 0.5s ease-out;
   background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, var(--highlight) 50%);
   background-position: -0% 0;
@@ -1203,7 +1194,7 @@ background: none;
 
 .vid{
   width: 850px;
-  height: auto;
+  height: 100%;
   max-width: 100%;
 }
 
