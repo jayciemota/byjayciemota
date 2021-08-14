@@ -548,8 +548,7 @@ a.menu-toggle {
 }
 
 a.menu-toggle svg {
-  width: 4.5vw;
-  min-width: 120px;
+  width: 70px;
   transition: all 0.5s ease;
 }
 
@@ -652,7 +651,6 @@ section{
   height: 100vh;
   align-items: center;
   flex-wrap: wrap;
-  padding: 60px;
 }
 
 .wrapper{
@@ -769,7 +767,7 @@ flex-wrap: wrap-reverse;
 
 @media screen and (max-width: 990px) {
   .tagline{
-    top: 64%;
+    top: 65%;
     font-size: 2em;
   }
 }
