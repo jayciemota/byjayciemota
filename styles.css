@@ -344,12 +344,6 @@ header {
   flex-direction: row;
 }
 
-@media only screen and (max-width: 975px){
-  .top-bar {
-    padding: 20px 40px;
-  }
-}
-
 nav.overlay.bounce-in-top {
  animation: bounce-in-top 1.1s both;
 animation-fill-mode: forwards;
@@ -1230,6 +1224,13 @@ form{
   position: relative;
   border-radius: 5px;
 }
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  }
+
 
 label, input, textarea{
 	display: block;
