@@ -142,7 +142,7 @@ h1 {
 }
 
 h2 {
-  font-size: 78pxem;
+  font-size: 78px;
 }
 @media only screen and (min-width: 725px) and (max-width: 975px){
   h1 {
@@ -1135,6 +1135,8 @@ background: none;
   border-left: 3px solid var(--black);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: fit-content;
 }
 .shell-bg {
   background: var(--white);
@@ -1344,7 +1346,7 @@ font-size: 1.3em;
   
   .bio{
     font-size: 0.9em;
-    line-height: 1.5em;
+    line-height: 1.4em;
   }
   
 .about-img{
@@ -1372,6 +1374,10 @@ font-size: 1.3em;
   }
   .profile-name p{
     font-size: 1.7em;
+  }  
+  .bio{
+    font-size: 1em;
+    line-height: 1.2em;
   }
 }
 
@@ -1390,18 +1396,6 @@ font-size: 1.3em;
   font-size: 0.9em;
   line-height: 1.3em;
 }  
-
-@media screen and (min-width: 725px) and (max-width: 975px) {
-  .summary-text{
-    font-size: 0.7em;
-  }  
-}
-
-@media only screen and (max-width: 724px) {
-  .summary-text{
-    font-size: 0.65em;
-  }  
-}
 
 /*----Palette----*/
 
