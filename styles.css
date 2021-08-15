@@ -1186,7 +1186,7 @@ background: none;
 
 .vid{
   width: 850px;
-  height: 100%;
+  height: fit-content;
   max-width: 100%;
 }
 
