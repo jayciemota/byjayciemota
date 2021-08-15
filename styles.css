@@ -642,7 +642,6 @@ a .mail-icon{
 section{
   display:flex;
   flex-direction: row;
-  height: 100vh;
   align-items: center;
   flex-wrap: wrap;
 }
