@@ -1127,7 +1127,6 @@ background: none;
   align-items: center;
   padding: 0 10px;
 }
-
 .shell-body{
   border-radius: 0 0 8px 8px;
   border-bottom: 3px solid var(--black);
@@ -1138,11 +1137,9 @@ background: none;
   display: flex;
   flex-direction: column;
 }
-
 .shell-padding{
   padding: 40px;
 }
-
 .video-shell-body{
   border-radius: 0 0 8px 8px;
   border-bottom: 3px solid var(--black);
@@ -1151,18 +1148,15 @@ background: none;
   display: flex;
   flex-direction: column;
 }
-
 .shell-bg {
   background: var(--white);
 }
-
 .about-bg{
   background: url('https://i.imgur.com/HvF7yfO.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 40vh;
 }
-
 .header-dot{
     border-radius: 50%;
     height: 10px;
@@ -1171,7 +1165,6 @@ background: none;
     border: 3px solid var(--black);
     display: inline-block;
 }
-
 .xl{
   width: 1020px;
   height: auto;
@@ -1186,7 +1179,6 @@ background: none;
 
 .vid{
   width: 850px;
-  height: fit-content;
   max-width: 100%;
 }
 
