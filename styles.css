@@ -975,7 +975,7 @@ background: none;
 .absolute{
   position: absolute;
   margin-right:-1%;
-  margin-top: 26%;
+  margin-top: 14%;
 }
 
 #fresh-polygon{
@@ -996,15 +996,15 @@ background: none;
 
 @media screen and (min-width:1186px) and (max-width: 1494px){
   .absolute{
-    margin-right:55%;
-    margin-top: 55%;
+    margin-top: 28%;
+    left: 14%;
   }
 }
 
 @media screen and (max-width: 1186px){
   .absolute{
-    margin-right:65%;
-    margin-top: 65%;
+    margin-top: 38%;
+    left: 8%;
   }
 }
 
