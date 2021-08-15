@@ -479,7 +479,7 @@ width: 95%;
 /* SOCIAL MEDIA ICON */
 
 .insta{
-fill: var(--blue-none)
+fill: var(--blue-none);
 }
 
 .linkedin{
@@ -942,7 +942,7 @@ background: none;
   }
 
   .page-link{
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 }
 
