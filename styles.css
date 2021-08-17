@@ -263,7 +263,7 @@ div.clickRipple {
 }
 /*-----------NAVIGATION BAR--------------- */
 header {
-    width: 100%;
+    width: 100vw;
     z-index: 999;
     position: fixed;
 }
@@ -272,6 +272,7 @@ header {
   padding: 40px;
   justify-content: space-between;
   flex-direction: row;
+  align-items: flex-start;
 }
 .byline{
   font-size:1.5em;
@@ -1424,11 +1425,14 @@ font-size: 1.3em;
     .reg{
       width: 300px;
     }
-    .absolute{
-      margin-top: 125%;
+    .absolute {
+      margin-top: 105%;
       left: 2%;
-      width: 35vw;
-    }
+      width: 27vw;
+  }
+  .fresh {
+    font-size: 0.7em;
+}
     input[type="submit"]{
       width: 90px;
       font-size: 0.8em;
