@@ -1267,6 +1267,10 @@ font-size: 1.3em;
     margin-top: 61%;
     left: 8%;
   }
+  .vid {
+    width: 685px;
+    max-width: 100%;
+}
   input, textarea, label {
     font-size: 110%;
   }
@@ -1403,6 +1407,7 @@ font-size: 1.3em;
     .grid-bg::before{
       background-size: 50px 50px, 50px 50px;
     }
+    .video-shell-body,
     .shell-body{
       border-bottom: 2px solid var(--black);
       border-right: 2px solid var(--black);
@@ -1424,6 +1429,9 @@ font-size: 1.3em;
     .vid,
     .reg{
       width: 300px;
+    }
+    .vid{
+      height: 26vh;
     }
     .absolute {
       margin-top: 105%;
