@@ -130,6 +130,7 @@ h2 {
 body {
     background:var(--main-bg);
     font-family: aglet-mono, mono, monospace;
+    margin: 0;
   }
   @keyframes scan {
     from {
@@ -254,11 +255,11 @@ div.clickRipple {
 }
 .triangle{
   display: block;
-  margin: -15% 0 0 84%;
+  margin: -1% 0 0 84%;
 }
 .triangle_shadow{
   display: block;
-  margin: -15% 0 0 85%;
+  margin: -1% 0 0 85%;
 }
 /*-----------NAVIGATION BAR--------------- */
 header {
@@ -1083,9 +1084,9 @@ font-size: 1.3em;
 .rinos-gray{
   background: #282828;
 }
-/*=============================
--------MEDIA QUERIES---------
-===========================*/
+/*===========================================================
+-----------------------MEDIA QUERIES-------------------
+=============================================================*/
 
 @media only screen and (min-width: 1506px) and (max-width:1704px){
   .mail .icon-tooltip{
@@ -1121,6 +1122,37 @@ font-size: 1.3em;
   .absolute{
     margin-top: 38%;
     left: 8%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width:974px){
+  .mail .icon-tooltip{
+    right: 6%;
+    top:65%;
+  }
+  .moon .icon-tooltip{
+    right: 43%;
+    top:70%;
+  }
+}
+/*======== Tablet view between 1024px and 769px ==========*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  h1 {
+    font-size: 3.7em;
+  }
+  h2 {
+    font-size: 2.8em;
+  }
+  .vid{
+    width: 650px;
+  }  
+  .absolute {
+    margin-top: 68%;
+    left: 10%;
+  }
+.xl {
+  width: 900px;
+  height: auto;
+  max-width: 100%;
   }
 }
 @media screen and (max-width: 990px) {
@@ -1181,27 +1213,6 @@ font-size: 1.3em;
       line-height: 1.2em;
   } 
 }
-@media only screen and (min-width: 725px) and (max-width: 975px){
-  h1 {
-    font-size: 3.7em;
-  }
-  h2 {
-    font-size: 2.8em;
-  }
-  .vid{
-    width: 650px;
-  }  
-}
-@media only screen and (min-width: 400px) and (max-width:974px){
-  .mail .icon-tooltip{
-    right: 6%;
-    top:65%;
-  }
-  .moon .icon-tooltip{
-    right: 43%;
-    top:70%;
-  }
-}
 @media screen and (max-width: 855px){
   .fresh{
     font-size: 1em;
@@ -1219,14 +1230,11 @@ font-size: 1.3em;
   .overlay-text a {
     font-size: 1.4em;
   }
+  .inner-shell{
+    grid-gap: 10px;
+  }
 }
 @media only screen and (max-width: 724px){
-  h1 {
-    font-size: 3.3em;
-  }
-  h2 {
-    font-size: 2.4em;
-  }
   .overlay a{
     font-size: 2.8em;
   }
@@ -1234,7 +1242,43 @@ font-size: 1.3em;
     width: 440px;
   }
 }
+/*======== Tablet view between 768px and 501px ==========*/
+
+@media screen and (min-width: 501px) and (max-width: 768px){
+  h1{
+    font-size: 3.2em;
+  }
+  .profile-name {
+    margin: 0% 5% 0 5%;
+  }
+  .palette-circle {
+    width: 40px;
+    height: 40px;
+  }
+  .palette {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .top-padding{
+    padding-top: 90px;
+  }
+  .absolute {
+    margin-top: 61%;
+    left: 8%;
+  }
+  input, textarea, label {
+    font-size: 110%;
+  }
+  .indicator-container {
+    top: 21%;
+  }
+  .tagline {
+    top: 72%;
+    font-size: 2em;
+  }
+}
 @media screen and (max-width: 690px) {
+
   .indicator-container{
     height: 3.4em;
     width: 3.4em;
@@ -1251,17 +1295,193 @@ font-size: 1.3em;
   }
 } 
 @media screen and (min-width: 576px) and (max-width: 685px){
-    .img-container{
-      width: 205px;
-    }
+  .img-container{
+    width: 205px;
   }
+}
 @media only screen and (max-width: 650px) {    
-    .accent{
-      margin-top: -15px;
-    }
+  .accent{
+    margin-top: -15px;
   }
-  @media screen and (max-width: 575px){
+}
+@media screen and (max-width: 575px){
   .img-container{
     width: 165px;
   }
   }
+
+/*======== Mobile view under 500px ==========*/
+  @media screen and (max-width: 500px){
+    h1{
+      font-size: 2.3em;
+    }
+    h3{
+      font-size: 1em;
+    }
+    .top-padding{
+      padding-top: 75px;
+    }
+    .top-bar{
+      padding: 20px;
+    }
+    .overlay a{
+      font-size: 1.8em;
+      padding: 11px;
+    }
+    .byline{
+      font-size: 0.9em;
+    }
+    a.menu-toggle svg{
+      width: 48px;
+    }
+    a.dark-mode-toggle svg{
+      width: 5vh;
+    }
+    .mail a svg{
+      width: 6vh;
+    }
+    .icon-tooltip{
+      font-size: 8px;
+    }
+    .moon .icon-tooltip{
+      top: 59%;
+      right: 35%;
+    }
+    .mail .icon-tooltip{
+      top: 57%;
+      right: 2.2%;
+    }
+    #lineDrawing{
+      padding: 50px;
+    }
+    .social-grid a svg,
+    .triangle svg,
+    .triangle_shadow svg {
+      width: 11vh;
+    }
+    .tagline{
+      top: 66%;
+      font-size: 1.2em;
+      right: 12%;
+    }
+    .indicator-container{
+      top: 20%;
+    }
+    .bio{
+      font-size: 0.7em;
+      line-height: 1.3em;
+    }
+    .slogan{
+      font-size: 0.9em;
+    }
+
+  .subtitle {
+    font-size: 90%;
+}
+.profile-name p {
+  font-size: 1.1em;
+  margin: 6px 0;
+}
+.profile-name {
+  margin: 1% 5% 0 5%;
+}
+  .about-img {
+    border: 2px solid var(--black);
+}
+.about-content {
+  border: 2px solid var(--black);
+  padding: 6px 15px;
+}
+  .about-content ul {
+  margin: 4px 0;
+  }
+    .about-content ul li {
+      line-height: 1.8em;
+      font-size: 0.7em;
+  }
+    .grid-bg::before{
+      background-size: 50px 50px, 50px 50px;
+    }
+    .shell-body{
+      border-bottom: 2px solid var(--black);
+      border-right: 2px solid var(--black);
+      border-left: 2px solid var(--black);
+    }
+    .summary-text {
+      font-size: 0.5em;
+      line-height: 1.5em;
+  }
+    input[type="email"], 
+    input[type="text"], 
+    textarea {
+      width: 100%;
+      padding: 3px;
+    }
+    textarea {
+      height: 82px;
+    }
+    .vid,
+    .reg{
+      width: 300px;
+    }
+    .absolute{
+      margin-top: 125%;
+      left: 2%;
+      width: 35vw;
+    }
+    input[type="submit"]{
+      width: 90px;
+      font-size: 0.8em;
+      margin: 16px 0;
+      border: 2px solid var(--black);
+    }
+    .page-links{
+      padding: 10px;
+      grid-gap: 20px;
+    }
+    .page-link{
+      font-size: 1em;
+    }
+    .rect1{
+      grid-column: 2/9;
+      grid-row: 4/9;
+      background: none;
+      border: 2px solid var(--black);
+    }
+    .rect2{
+      grid-column: 3/10;
+      grid-row: 6/10;
+    }
+    .shell-header{
+      height: 20px;
+      border: 2px solid var(--black);
+    }
+    .palette {
+      padding: 5px;
+      margin-bottom: 10px;
+  }
+    .palette-circle {
+      width: 17px;
+      height: 17px;
+      border: 2px solid var(--black);
+      border-radius: 50px;
+  }
+    .img-thumbnail{
+      border: 2px solid var(--black);
+    }
+    .header-dot{
+      height: 8px;
+      width: 8px;
+      border: 2px solid var(--black);
+    }
+    .img-container{
+      box-shadow: none;
+      margin: 10px;
+      border: 2px solid var(--black);
+    }
+    label {
+    padding-left: 0px;
+    margin-top: 5px;
+    padding-top: 4px;
+    }
+    }
