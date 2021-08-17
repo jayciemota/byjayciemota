@@ -1507,4 +1507,13 @@ font-size: 1.3em;
         top: 65%;
         right: 37%;
       }
+      .mail a svg{
+        width: 5vh;
+      }
+      a.dark-mode-toggle svg{
+        width: 4vh;
+      }
+      a.menu-toggle svg{
+        width: 36px;
+      }
     }
