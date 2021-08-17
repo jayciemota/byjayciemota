@@ -561,7 +561,7 @@ flex-wrap: wrap-reverse;
   stroke-width: 2px;
 }
 .pink-fill {
-  fill: none;
+  fill: transparent;
   animation: pinkFill 2s ease-in 1.5s forwards;
 }
 @keyframes pinkFill {
@@ -1496,4 +1496,15 @@ font-size: 1.3em;
     margin-top: 5px;
     padding-top: 4px;
     }
+    }
+
+    @media only screen and (max-width: 390px){
+      .absolute{
+        margin-top: 57%;
+        left: 2%
+      }
+      .moon .icon-tooltip{
+        top: 65%;
+        right: 37%;
+      }
     }
