@@ -1430,7 +1430,7 @@ font-size: 1.3em;
     .reg{
       width: 300px;
     }
-    .vid{
+    video {
       height: 26vh;
     }
     .absolute {
