@@ -1330,9 +1330,13 @@ font-size: 1.3em;
       padding: 20px;
     }
     .overlay a{
-      font-size: 1em;
+      font-size: 1.8em;
       padding: 11px;
     }
+    .overlay-text a{
+      font-size: 1em;
+    }
+
     .byline{
       font-size: 0.9em;
     }
@@ -1430,10 +1434,10 @@ font-size: 1.3em;
     textarea {
       width: 100%;
       padding: 3px;
+      font-size: 16px;
     }
     textarea {
       height: 82px;
-      font-size: 16px;
     }
     .vid,
     .reg{
