@@ -11,28 +11,6 @@
     <link rel="stylesheet" href="fullpage.css">
     <link rel="stylesheet" href="https://use.typekit.net/efp6vft.css">
     <script src="https://kit.fontawesome.com/df47cda77e.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_TnZzTRkfoQWF9jexhwDXW");
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function () {
-                        console.log('SUCCESS!');
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
     <title>Jaycie Mota - Web Designer & Developer</title>
 </head>
 <body>
@@ -565,15 +543,15 @@
                                 <span class="header-dot pink-bg"></span>
                             </div>
                             <div class="shell-body shell-padding justify-center shell-bg">
-                                <form id="contact-form">
+                                <form id="contact-form" name="contact" method="POST" data-netlify="true">
                                     <input type="hidden" name="contact_number">
                                     <div class="formgroup" id="name-form">
                                         <label for="name">Your name*</label>
-                                        <input type="text" id="name" name="user_name">
+                                        <input type="text" id="name" name="name">
                                     </div>
                                     <div class="formgroup" id="email-form">
                                         <label for="email">Your e-mail*</label>
-                                        <input type="email" id="email" name="user_email">
+                                        <input type="email" id="email" name="email">
                                     </div>
                                     <div class="formgroup" id="message-form">
                                         <label>Your message</label>
