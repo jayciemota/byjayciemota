@@ -73,7 +73,6 @@
 	 width: 20px; height: 20px; /* 20px */
 } 
 }
-
 @keyframes dot1 {
   0% {
  width: 20px; height: 20px;
@@ -88,7 +87,6 @@
  width: 20px; height: 20px;
 }
 }
-
 @keyframes dot2 {
   0% {
 	width: 20px; height: 20px;
@@ -136,7 +134,6 @@ width: 20px; height: 20px;
   height: 20px; width: 20px;
 }
 }
-
 div.loading {
   position: fixed;
   top: 0;
@@ -154,8 +151,6 @@ width: 100vw;
   animation-fill-mode: forwards;
   animation-delay: 0.2s;
 }
-
-
 .loader {
 	display: flex;
 	flex-direction: column;
@@ -163,13 +158,11 @@ width: 100vw;
   height: 150px;
   width: 150px;
 }
-
 .anim {
   /* flex circles and loading text */
   display: flex;
   height: 75px;
 }
-
 .loader .dot1 {
   /* apply dot1 animation */
 	 animation-name: dot1;
@@ -197,7 +190,6 @@ width: 100vw;
    border: 2px solid var(--black);
    box-shadow:	2px 2px var(--blk-shadow);
 }
-
 .loader span {
   display: inline-block;
   height: 20px;
@@ -205,12 +197,9 @@ width: 100vw;
   border-radius: 50%;
   margin: auto auto 0 auto;
 }
-
 .loader p {
   text-align: center;
 }
-
-
 /*------- Fill Classes ------*/
 .green{
   fill: var(--green-none);
@@ -1671,7 +1660,6 @@ font-size: 1.3em;
     padding-top: 4px;
     }
     }
-
     @media only screen and (max-width: 414px){
       .absolute{
         margin-top: 63%;
