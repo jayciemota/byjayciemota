@@ -15,11 +15,9 @@ let disableDarkMode = () => {
 }
 
 //Once the page loads, check the localStorage value for the last session (if any) to set the correct mode.
-
 if (localDarkMode === 'enabled') { enableDarkMode() }
 
 //Add the event listener for the toggle button adding the functions already created before and loading the value for the localStorage too.
-
 darkModeToggle.addEventListener('click', () => {
   
   localDarkMode = localStorage.getItem('localDarkMode'); 
@@ -33,7 +31,6 @@ darkModeToggle.addEventListener('click', () => {
 })
 
 // Autoplay videos on Projects page
-
 const allVideos = document.querySelectorAll('video')
 
 const playVideo = () => {
@@ -42,15 +39,13 @@ const playVideo = () => {
   })
 }
 
-
 // Generate random fact on About page on page reload
 function newFact() {
     var facts = ["The wood frog can hold its pee for up to eight months. My personal record is ten hours on an international flight. Wow!", "The term 'freelancers' originally referred to self-employed, sword-wielding mercenaries. Regrettably, I do not own a sword.", "The word 'MacGyvered' is in the Oxford English Dictionary. (e.g. I MacGyvered this website using toothpicks and StackOverflow.)"];
     var randomFact = Math.floor(Math.random() * facts.length);
     document.getElementById('factDisplay').innerHTML = facts[randomFact];
   };
-
-
+  
 // Colorful click effect
 const COLORS = ['red','green','pink','blue','yellow','purple'];
 
