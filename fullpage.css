@@ -260,4 +260,7 @@ html.fp-enabled,
     .fp-slidesNav ul li a span {
         border: 2px solid var(--black);
     }
+    .fp-tooltip{
+        display: none;
+    }
 }

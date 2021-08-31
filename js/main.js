@@ -45,7 +45,7 @@ function newFact() {
     var randomFact = Math.floor(Math.random() * facts.length);
     document.getElementById('factDisplay').innerHTML = facts[randomFact];
   };
-  
+
 // Colorful click effect
 const COLORS = ['red','green','pink','blue','yellow','purple'];
 
@@ -89,7 +89,6 @@ document.addEventListener('click', function () {
     navMenu.classList.remove('bounce-in-top')
 }
 })
-
 // Contact Form Validation 
 $('document').ready(function(){
 	$('input[type="text"], input[type="email"], textarea').focus(function(){
@@ -119,6 +118,5 @@ if($('#email').val() == "") {
 	stopsubmit=true;
 }
   if(stopsubmit) return false;
-});
-		
+});	
 });

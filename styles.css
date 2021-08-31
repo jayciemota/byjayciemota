@@ -948,13 +948,13 @@ background: none;
   left: 0;
   right: 0;
   opacity: 0;
-  background-color: var(--yellow);
-  border-top: 3px solid #000;
-  border-bottom: 3px solid #000;
+  background-color: var(--highlight);
+  border-top: 3px solid var(--black);
+  border-bottom: 3px solid var(--black);
   transition: 0.2s;
 }
 .overlay-text a {
-  color: #000;
+  color: var(--linkhover);
   font-size: 1.7em;
   text-decoration: none;
   font-weight: 500;
@@ -1533,6 +1533,7 @@ font-size: 1.3em;
     }
     .indicator-container{
       top: 20%;
+      border-width: 2px;
     }
     .bio{
       font-size: 0.7em;
