@@ -1,8 +1,8 @@
 # Redirects from what the browser requests to what we serve
-/index.html              /                                                       301
-/projects.html           /projects                                               301
-/about.html              /about                                                  301
-/about-me                /about                                                  301
+/index.html              https://byjayciemota.com                                301
+/projects.html           https://byjayciemota.com/projects                       301
+/about.html              https://byjayciemota.com/about                          301
+/about-me                https://byjayciemota.com/about                          301
 /photography             https://jayciemota.myportfolio.com/photography          301
 /illustration            https://jayciemota.myportfolio.com/illustration         301
 /graphic-design          https://jayciemota.myportfolio.com/graphic-design       301
