@@ -1114,9 +1114,7 @@ label{
 	background-position: right top;
 	background-size: 6.5%;
 }
-.formgroup{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');	
-}
+
 .formgroup-active{
 	background-image: url('https://i.imgur.com/jaN12uk.png');
 }
