@@ -1267,6 +1267,12 @@ font-size: 1.3em;
     left: 14%;
   }
 }
+
+@media only screen and (min-width: 500px) and (max-width:1366px){
+ video{
+   height: 57vh;
+ }
+}
 @media screen and (max-width: 1186px){
   .absolute{
     margin-top: 38%;
