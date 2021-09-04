@@ -1286,6 +1286,9 @@ font-size: 1.3em;
   .video-shell-body{
     height: 38vh;
   }
+  .page-links.block{
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1186px){
@@ -1307,7 +1310,7 @@ font-size: 1.3em;
 /*======== Tablet view between 1024px and 769px ==========*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
   h1 {
-    font-size: 3.7em;
+    font-size: 4.5em;
   }
   h2 {
     font-size: 2.8em;
@@ -1316,13 +1319,16 @@ font-size: 1.3em;
     width: 650px;
   }  
   .absolute {
-    margin-top: 68%;
-    left: 10%;
+    margin-top: 40%;
+    left: 4%;
   }
 .xl {
   width: 900px;
   height: auto;
   max-width: 100%;
+  }
+  .page-links.block{
+    display: block;
   }
 }
 @media screen and (max-width: 990px) {
