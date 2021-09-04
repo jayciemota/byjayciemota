@@ -280,7 +280,7 @@ h5
   color: var(--black);
 }
 h1 {
-  font-size: 84px;
+  font-size: 80px;
 }
 h2 {
   font-size: 65px;
@@ -1261,12 +1261,33 @@ font-size: 1.3em;
     box-shadow: none;
   }
 }
-@media screen and (min-width:1186px) and (max-width: 1494px){
+@media screen and (min-width:1367px) and (max-width: 1494px){
   .absolute{
     margin-top: 28%;
     left: 14%;
   }
 }
+
+/*======== iPad Pro 12.9 Landscape View 1366px ==========*/
+@media screen and (min-width: 1366px) and (max-width: 1366px){
+  .reg{
+   width: 650px;
+  }
+  .absolute{
+    margin-top: 17%;
+    left: 38%;
+  }
+  .block{
+    display: block;
+  }
+  .vid{
+    width: 575px;
+  }
+  .video-shell-body{
+    height: 38vh;
+  }
+}
+
 @media screen and (max-width: 1186px){
   .absolute{
     margin-top: 38%;
