@@ -1620,10 +1620,13 @@ font-size: 1.3em;
       width: 300px;
     }
     video {
+      height: 26vh;
+    }
+    video.contain{
       height: 100%;
       width: 100%;
-      object-fit: contain;
     }
+
     .absolute {
       margin-top: 105%;
       left: 2%;
