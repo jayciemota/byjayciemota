@@ -1622,10 +1622,6 @@ font-size: 1.3em;
     video {
       height: 26vh;
     }
-    video.contain{
-      height: 100%;
-      width: 100%;
-    }
 
     .absolute {
       margin-top: 105%;
