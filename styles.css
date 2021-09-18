@@ -1123,6 +1123,10 @@ label{
   color: red;
 }
 /*======================ABOUT PAGE========================*/
+.no-scroll-x{
+  overflow-x: hidden;
+}
+
 .subtitle{
   font-size: 1.3em;
 }
