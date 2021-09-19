@@ -857,6 +857,7 @@ background: none;
 }
 .page-link{
   text-decoration: none;
+  white-space: nowrap;
   color: var(--black);
   font-size: 1.7em;
   transition: background-position 0.5s ease-out;
