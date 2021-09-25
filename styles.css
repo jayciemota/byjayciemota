@@ -1124,8 +1124,9 @@ label{
   color: red;
 }
 /*======================ABOUT PAGE========================*/
-.no-scroll-x{
+.no-scroll{
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .subtitle{
