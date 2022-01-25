@@ -1655,9 +1655,9 @@ font-size: 1.3em;
     }
 
     .absolute {
-      margin-top: 105%;
-      left: 2%;
+      left: 10%;
       width: 27vw;
+      top: 63%;
   }
   .fresh {
     font-size: 0.7em;
