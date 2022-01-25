@@ -1298,8 +1298,10 @@ font-size: 1.3em;
 
 @media screen and (max-width: 1186px){
   .absolute{
-    margin-top: 38%;
-    left: 8%;
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
   }
 }
 @media only screen and (min-width: 500px) and (max-width:974px){
