@@ -890,6 +890,7 @@ background: none;
   z-index: 200;
 }
 .absolute{
+  position: absolute;
   top: auto;
   right: 0;
   bottom: 0;
