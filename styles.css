@@ -1343,8 +1343,12 @@ font-size: 1.3em;
     width: 650px;
   }  
   .absolute {
-    margin-top: 40%;
-    left: 4%;
+    position: absolute;
+    top: 75%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
   }
 .xl {
   width: 900px;
