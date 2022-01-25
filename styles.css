@@ -890,10 +890,12 @@ background: none;
   z-index: 200;
 }
 .absolute{
-  position: absolute;
-  margin-right:-1%;
-  margin-top: 21%;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 9%;
 }
+
 #fresh-polygon{
   position: absolute;
 }
