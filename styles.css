@@ -890,6 +890,10 @@ background: none;
   z-index: 200;
 }
 
+.absolute{
+  position: absolute;
+}
+
 @media screen and (min-width: 1186px){
 .absolute{
   position: absolute;
@@ -1349,7 +1353,7 @@ font-size: 1.3em;
     bottom: 0;
     left: 0;
 }
-  }
+  
 .xl {
   width: 900px;
   height: auto;
