@@ -889,6 +889,8 @@ background: none;
   align-items: center;
   z-index: 200;
 }
+
+@media screen and (min-width: 1186px){
 .absolute{
   position: absolute;
   top: auto;
@@ -896,6 +898,18 @@ background: none;
   bottom: 0;
   left: 9%;
 }
+}
+
+@media screen and (min-width: 1495px){
+  .absolute {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 10%;
+    left: 40%;
+}
+  }
+  
 
 #fresh-polygon{
   position: absolute;
