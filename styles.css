@@ -1737,3 +1737,28 @@ font-size: 1.3em;
         width: 36px;
       }
     }
+
+/* ==== EMBLEMS ==== */
+
+#designrush,
+#awwwards{
+  display: none;
+}
+
+@media screen and (min-width: 1024px){
+  #designrush{
+    position: fixed; 
+    z-index: 999; 
+    top: 80%;  
+    right: 0;
+    display: block;
+  }
+  #awwwards{
+    display: block;
+    position: fixed; 
+    z-index: 999; 
+    transform: translateY(-50%); 
+    top: 50%;  
+    right: 0
+  }
+}
