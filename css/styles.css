@@ -1155,6 +1155,7 @@ section {
 
 .img-container img {
   width: 100%;
+  min-height: 209px;
 }
 
 .img-container {
@@ -1165,6 +1166,7 @@ section {
   align-items: center;
   margin: 20px;
   width: 325px;
+
   max-width: 100%;
   box-shadow: 8px 8px var(--blk-shadow);
   border-radius: 2px;
