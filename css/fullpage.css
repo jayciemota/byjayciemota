@@ -29,7 +29,6 @@ html.fp-enabled,
 
 .fp-slide {
     float: left;
-    padding: 0 1.5em;
 }
 
 .fp-slide,
@@ -141,7 +140,7 @@ html.fp-enabled,
 
 @media screen and (max-width: 976px) {
     #fp-nav.fp-left {
-        left: 6px;
+        left: -12px;
     }
 }
 
@@ -164,14 +163,6 @@ html.fp-enabled,
     bottom: 17px;
 }
 
-.fp-slidesNav.fp-bottom ul {
-    gap: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .fp-slidesNav.fp-top {
     top: 17px;
 }
@@ -187,7 +178,7 @@ html.fp-enabled,
     display: block;
     width: 18px;
     height: 18px;
-    margin: 16px auto;
+    margin: 16px;
     position: relative;
 }
 
